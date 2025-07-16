@@ -14,7 +14,6 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16 / 9; /* Ensures it scales responsively */
   border: 2px solid #333;
   background-color: #fff;
   margin: 0 auto;
@@ -24,9 +23,9 @@ h1 {
 
 .floorplan-container img,
 .floorplan-container object {
-  width: 100%;                      /* Make image or SVG fit container */
-  height: auto;                     /* Maintain aspect ratio */
-  display: block;                   /* Remove inline spacing */
+  width: 100%;                     
+  height: auto;                     
+  display: block;                  
 }
 
 .popup {

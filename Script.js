@@ -29,11 +29,10 @@ fetch(apiUrl)
 function setupSVG() {
   const svgDoc = object.contentDocument;
 
-  // ✅ If SVG is already loaded
   if (svgDoc) {
     updateRooms(svgDoc);
   } else {
-    // Wait for SVG to load
+  
     object.addEventListener('load', () => {
       updateRooms(object.contentDocument);
     });
